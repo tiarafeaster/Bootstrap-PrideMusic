@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/541ad9a9ce.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Pride Music</title>
+  </head>
+
+  <body>
+    <!-- Jumbotron-->
+
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-left text-dark">Pride Music</h1>
+            <h2 class="text-left text-dark">
+              For LGBTQ+ Artists of COLOR To Share Our Music With Each Other and
+              The World!
+            </h2>
+          </div>
+          <div class="col-md-4 col-xl-2 mt-6">
+            <a class="btn btn-lg text-nowrap" href="login.html">Artist Login</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- This is the Navigation Bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+      <div class="container">
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#musicNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="musicNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#process">How It Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="browse.html">Browse and Book</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h2>Welcome To Your Page</h2>
+    <h4>Plan Type: Platinum <img src="images/platinum.jfif" /></h4>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Name of Your Band</h5>
+            <p>Image Preview:<img id="preview" width="300" /></p>
+            <div>
+              <label for="avatar">Upload Your Image(s):</label>
+              <input type="file" id="avatar" name="avatar" required />
+            </div>
+            <form class="row">
+              <div class="col-md-12">
+                <label for="biography">Biography:</label>
+                <textarea
+                  class="form-control"
+                  id="biography"
+                  placeholder="This is where a brief biography of the artist will go."
+                  autofocus="on"
+                >
+                </textarea>
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">City:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputCity"
+                  placeholder="Enter Your City"
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Choose...</option>
+                  <option value="ca">California</option>
+                  <option value="ct">Connecticut</option>
+                  <option value="fl">Florida</option>
+                  <option value="ny">New York</option>
+                  <option value="ma">Massachusetts</option>
+                  >
+                </select>
+              </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip Code:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputZip"
+                  placeholder="12345"
+                />
+              </div>
+              <button type="submit" id="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Music Uploads</h5>
+            <h6>Name of Track</h6>
+            <div>
+              <label for="music">Upload Your Music Here:</label>
+              <input type="file" id="music" name="music" required />
+            </div>
+            <p class="card-text">
+              This is where the tracks you upload will be placed.
+            </p>
+            <ol>
+              <li>Track 1</li>
+              <li>Track 2</li>
+              <li>Track 3</li>
+              <li>Track 4</li>
+              <li>Track 5</li>
+              <li>Track 6</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Distribution</h5>
+            <p class="card-text">
+              This is where you will select which websites your music will be
+              uploaded to.
+            </p>
+
+            <!--Fix this with JS-->
+            <div>
+              Select Tracks to Upload:
+              <input
+                type="checkbox"
+                id="track-one"
+                name="tracks"
+                value="track-one"
+              />
+              <label for="track-one"> Track 1 </label>
+              <input
+                type="checkbox"
+                id="track-two"
+                name="tracks"
+                value="track-two"
+              />
+              <label for="track-two"> Track 2 </label>
+              <input
+                type="checkbox"
+                id="track-three"
+                name="tracks"
+                value="track-three"
+              />
+              <label for="track-three"> Track 3 </label>
+            </div>
+            <div>
+              Where are we sending it to?
+              <input
+                type="checkbox"
+                id="soundCloud"
+                name="music"
+                value="soundCloud"
+              />
+              <label for="soundCloud">
+                SoundCloud <i class="fab fa-soundcloud"></i>
+              </label>
+              <input type="checkbox" id="apple" name="music" value="tidal" />
+              <label for="apple">
+                Apple Music <i class="fab fa-apple"></i>
+              </label>
+              <input
+                type="checkbox"
+                id="spotify"
+                name="music"
+                value="spotify"
+              />
+              <label for="spotify">
+                Spotify <i class="fab fa-spotify"></i
+              ></label>
+            </div>
+            <div>
+              Select Images to Upload:
+              <input
+                type="checkbox"
+                id="image-one"
+                name="images"
+                value="image-one"
+              />
+              <label for="image-one"> Image 1 </label>
+              <input
+                type="checkbox"
+                id="image-two"
+                name="images"
+                value="image-two"
+              />
+              <label for="image-two"> Image 2 </label>
+              <input
+                type="checkbox"
+                id="image-three"
+                name="images"
+                value="image-three"
+              />
+              <label for="image-three"> Image 3 </label>
+            </div>
+            <div>
+              Upload Bio?
+              <input
+                type="radio"
+                id="uploadYes"
+                name="uploadRadio"
+                value="yes"
+              />
+              <label for="uploadYes"> Yes </label>
+              <input type="radio" id="uploadNo" name="uploadRadio" value="no" />
+              <label for="uploadNo"> No </label>
+            </div>
+            <span
+              ><button type="submit" class="btn btn-primary">
+                Send Off
+              </button></span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/calendar.jpg"
+            class="card-img-top img-fluid"
+            alt="image of calendar"
+            id="events-image"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Upcoming Events</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content. This content is a little bit
+              longer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- This is the footer of the webpage -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h5>Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="home.html">Home</a></li>
+              <li><a href="#">Get Started</a></li>
+              <li><a href="browse.html">Browse and Book</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+            <h5>Social</h5>
+            <a href="http://instagram.com/">Instagram</a>
+            <a href="http://facebook.com/">Facebook</a>
+            <a href="http://twitter.com/">Twitter</a>
+            <a href="http://youtube.com/">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="login.js"></script>
+  </body>
+</html>

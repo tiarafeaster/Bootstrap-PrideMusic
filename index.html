@@ -4,7 +4,10 @@
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Page for Artists to see their requests" />
+    <meta
+      name="description"
+      content="This is a page for LGBTQ+ artists to get booked by their fans"
+    />
 
     <!-- Bootstrap CSS -->
     <link
@@ -29,7 +32,7 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
 
-    <title>Pride Music</title>
+    <title>Pride Music | Coming Soon</title>
   </head>
 
   <body>
@@ -51,6 +54,7 @@
       </div>
     </header>
 
+    <!-- This is for the Navigation Bar-->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
         <button
@@ -64,13 +68,13 @@
         <div class="collapse navbar-collapse" id="musicNavbar">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html#home">Home</a>
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#process">How It Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html#process">How It Works</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#pricing">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="browse.html">Browse and Book</a>
@@ -80,180 +84,359 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item">
-              <a href="browse.html">Browse and Book</a>
-            </li>
-            <li class="breadcrumb-item active">Artists Page</li>
-          </ol>
-          <hr />
-        </div>
-      </div>
-    </div>
+    <!--<div class="bg-cover">
+			<img
+				class="img-fluid"
+				src="images/drums close-up.jpeg"
+				alt="picture of drums"
+			/>
+		</div>-->
 
-    <div>
-      <h3 class="h3-header">Frank Ocean</h3>
+    <div class="home" id="home">
+      <h3 class="h3-header">Home</h3>
     </div>
-
-    <div class="card-deck">
-      <div class="col" id="artists-page">
-        <div class="card">
-          <h2 class="card-title">Gallery</h2>
-          <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li
-                data-target="#homeCarousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#homeCarousel" data-slide-to="1"></li>
-              <li data-target="#homeCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block w-100 img-fluid"
-                  src="images/artists/frank-ocean-bw.jpg"
-                  alt="black and white of frank ocean sitting in a chair"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100 img-fluid"
-                  src="images/artists/frank-ocean-green.jpg"
-                  alt="frank ocean sitting with his green hair"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block w-100 img-fluid"
-                  src="images/artists/frank-ocean-mic.jpg"
-                  alt="frank ocean on stage with microphone in his hand"
-                />
-              </div>
-            </div>
-            <a
-              class="carousel-control-prev"
-              href="#homeCarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span class="carousel-control-prev-icon"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#homeCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <span class="carousel-control-next-icon"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-          <br />
-          <card class="text">
-            <ol class="list-unstyled">
-              <li>
-                This is where a brief bio of the artist will go. It would be
-                about 2-3 sentences about whatever they think is relevant to
-                their music. It could be about how they started or who members
-                of the band are. Anything really.
-              </li>
-              <li>This is where the City, State info goes.</li>
-              <li>This is the genre of music.</li>
-            </ol>
-          </card>
-        </div>
-      </div>
-      <!-- Temp Audio Player  -->
+    <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
-        <div class="card">
+        <div class="card h-100">
+          <img
+            class="card-img-top"
+            src="images/notes1.jfif"
+            alt="music notes picture"
+          />
           <div class="card-body">
-            <h5 class="card-title">Track 1: Chill Hop</h5>
-            <card class="text">
-              <audio
-                controls
-                loop
-                src="https://www.bensound.com/bensound-music/bensound-allthat.mp3"
-                alt="chill hop"
-              >
-                Your browser does not support the audio element
-              </audio>
-            </card>
-            <h5 class="card-title">Track 2: Retro Soul</h5>
-            <card class="text">
-              <audio
-                controls
-                loop
-                src="https://www.bensound.com/bensound-music/bensound-retrosoul.mp3"
-                alt="retro"
-              >
-                Your browser does not support the audio element
-              </audio>
-            </card>
-            <h5 class="card-title">Track 3: Funny Song</h5>
-            <card class="text">
-              <audio
-                controls
-                loop
-                src="https://www.bensound.com/bensound-music/bensound-funnysong.mp3"
-                alt="funny song"
-              >
-                Your browser does not support the audio element
-              </audio>
-            </card>
-            <h5 class="class-title">Track 4: Chill Hop</h5>
-            <card class="text">
-              <audio
-                controls
-                loop
-                src="https://www.bensound.com/bensound-music/bensound-allthat.mp3"
-                alt="chill hop"
-              ></audio>
-            </card>
-            <h5 class="card-title">Track 5: Retro Soul</h5>
-            <card class="text">
-              <audio
-                controls
-                loop
-                src="https://www.bensound.com/bensound-music/bensound-retrosoul.mp3"
-                alt="retro"
-              >
-                Your browser does not support the audio element
-              </audio>
-            </card>
-
-            <br />
-            <br />
-            <p>
-              Royalty Free Music from <a href="www.bensound.com">Bensound</a>
+            <h5 class="card-title">Who We Are</h5>
+            <p class="card-text">
+              I'm baby tattooed gentrify +1 fam edison bulb lumbersexual. Kogi
+              vice letterpress photo booth wayfarers retro. Drinking vinegar
+              retro paleo, franzen salvia fam health goth hexagon 8-bit tacos
+              mustache. Lyft cray air plant ramps shaman blog, truffaut plaid
+              taxidermy cred brooklyn iPhone XOXO subway tile fashion axe.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            class="card-img-top"
+            src="images/notes2.png"
+            alt="another picture of music notes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">What We Do</h5>
+            <p class="card-text">
+              Farm-to-table air plant seitan af live-edge lo-fi pug vaporware
+              flexitarian before they sold out 90's chartreuse. Taiyaki keffiyeh
+              church-key next level, prism shoreditch sriracha whatever
+              scenester brooklyn. Leggings iPhone edison bulb gastropub ramps
+              hashtag paleo affogato photo booth, 90's kombucha before they sold
+              out hexagon. 90's XOXO pug roof party truffaut butcher, heirloom
+              celiac mumblecore hashtag.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            class="card-img-top"
+            src="images/notes3.jfif"
+            alt="and another picture of music notes"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Why We Do It</h5>
+            <p class="card-text">
+              Poutine letterpress shaman lumbersexual small batch tumeric kogi
+              put a bird on it roof party humblebrag pok pok literally forage
+              asymmetrical. Jean shorts cred etsy knausgaard, lomo gluten-free
+              pok pok neutra microdosing la croix stumptown beard. Banh mi
+              thundercats cray mixtape freegan portland. Wayfarers shaman
+              neutra, air plant skateboard copper mug four loko tumblr paleo
+              four dollar toast.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="process" id="process">
+      <h3 class="h3-header">How It Works</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/how-it-works/create-account.png"
+            class="card-img-top"
+            alt="someone creating an account"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Create Account</h5>
+            <p class="card-text">
+              Edison bulb williamsburg gentrify, est aliqua salvia man bun. Chia
+              vice pop-up chicharrones. Listicle sriracha normcore tofu, taiyaki
+              ut pok pok salvia poke cardigan plaid consequat 8-bit veniam.
+              Aliqua occupy sunt street art lo-fi, dolor unicorn air plant ramps
+              yuccie vinyl taiyaki kogi. Leggings cloud bread church-key migas
+              fugiat trust fund..
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/how-it-works/choose-plan.png"
+            class="card-img-top"
+            alt="someone choosing a plan"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Choose Plan</h5>
+            <p class="card-text">
+              Edison bulb williamsburg gentrify, est aliqua salvia man bun. Chia
+              vice pop-up chicharrones. Listicle sriracha normcore tofu, taiyaki
+              ut pok pok salvia poke cardigan plaid consequat 8-bit veniam.
+              Aliqua occupy sunt street art lo-fi, dolor unicorn air plant ramps
+              yuccie vinyl taiyaki kogi. Leggings cloud bread church-key migas
+              fugiat trust fund.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/how-it-works/edit-profile.png"
+            class="card-img-top"
+            alt="someone editing their profile page"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Edit Profile</h5>
+            <p class="card-text">
+              Edison bulb williamsburg gentrify, est aliqua salvia man bun. Chia
+              vice pop-up chicharrones. Listicle sriracha normcore tofu, taiyaki
+              ut pok pok salvia poke cardigan plaid consequat 8-bit veniam.
+              Aliqua occupy sunt street art lo-fi, dolor unicorn air plant ramps
+              yuccie vinyl taiyaki kogi. Leggings cloud bread church-key migas
+              fugiat trust fund.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/how-it-works/upload.png"
+            class="card-img-top"
+            alt="someone uploading to a website"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Upload Music</h5>
+            <p class="card-text">
+              Edison bulb williamsburg gentrify, est aliqua salvia man bun. Chia
+              vice pop-up chicharrones. Listicle sriracha normcore tofu, taiyaki
+              ut pok pok salvia poke cardigan plaid consequat 8-bit veniam.
+              Aliqua occupy sunt street art lo-fi, dolor unicorn air plant ramps
+              yuccie vinyl taiyaki kogi. Leggings cloud bread church-key migas
+              fugiat trust fund.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/how-it-works/viewing-messages.png"
+            class="card-img-top"
+            alt="someone viewing messages"
+          />
+          <div class="card-body">
+            <h5 class="card-title">View Requests</h5>
+            <p class="card-text">
+              Edison bulb williamsburg gentrify, est aliqua salvia man bun. Chia
+              vice pop-up chicharrones. Listicle sriracha normcore tofu, taiyaki
+              ut pok pok salvia poke cardigan plaid consequat 8-bit veniam.
+              Aliqua occupy sunt street art lo-fi, dolor unicorn air plant ramps
+              yuccie vinyl taiyaki kogi. Leggings cloud bread church-key migas
+              fugiat trust fund.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/how-it-works/get-money.png"
+            class="card-img-top"
+            alt="someone climbing up a money ladder"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Get Booked</h5>
+            <p class="card-text">
+              Edison bulb williamsburg gentrify, est aliqua salvia man bun. Chia
+              vice pop-up chicharrones. Listicle sriracha normcore tofu, taiyaki
+              ut pok pok salvia poke cardigan plaid consequat 8-bit veniam.
+              Aliqua occupy sunt street art lo-fi, dolor unicorn air plant ramps
+              yuccie vinyl taiyaki kogi. Leggings cloud bread church-key migas
+              fugiat trust fund.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pricing" id="pricing">
+      <h3 class="h3-header">Pricing</h3>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/gold.jfif"
+            class="card-img-top"
+            alt="RIAA Gold Record"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Gold Plan</h5>
+            <p class="card-text">
+              Tumeric narwhal 3 wolf moon franzen, in slow-carb gluten-free nisi
+              veniam freegan pok pok cillum sartorial fixie. Ethical sustainable
+              pork belly taxidermy, banh mi enim elit gentrify whatever. Ugh
+              tofu art party butcher vaporware sed. Retro tumeric kale chips
+              williamsburg eiusmod umami artisan drinking vinegar freegan
+              fugiat. Literally officia next level hell of lyft live-edge
+              mustache. Lumbersexual normcore shaman four dollar toast velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/diamond.jfif"
+            class="card-img-top"
+            alt="RIAA Diamond Record"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Diamond Plan</h5>
+            <p class="card-text">
+              Tumeric narwhal 3 wolf moon franzen, in slow-carb gluten-free nisi
+              veniam freegan pok pok cillum sartorial fixie. Ethical sustainable
+              pork belly taxidermy, banh mi enim elit gentrify whatever. Ugh
+              tofu art party butcher vaporware sed. Retro tumeric kale chips
+              williamsburg eiusmod umami artisan drinking vinegar freegan
+              fugiat. Literally officia next level hell of lyft live-edge
+              mustache. Lumbersexual normcore shaman four dollar toast velit.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/platinum.jfif"
+            class="card-img-top"
+            alt="RIAA Platinum Record"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Platinum Plan</h5>
+            <p class="card-text">
+              Tumeric narwhal 3 wolf moon franzen, in slow-carb gluten-free nisi
+              veniam freegan pok pok cillum sartorial fixie. Ethical sustainable
+              pork belly taxidermy, banh mi enim elit gentrify whatever. Ugh
+              tofu art party butcher vaporware sed. Retro tumeric kale chips
+              williamsburg eiusmod umami artisan drinking vinegar freegan
+              fugiat. Literally officia next level hell of lyft live-edge
+              mustache. Lumbersexual normcore shaman four dollar toast velit.
             </p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Button trigger modal -->
-    <div class="col">
-      <button
-        type="button"
-        class="btn btn-primary btn-lg"
-        data-toggle="modal"
-        data-target="#requestModal"
-      >
-        Request Artist
-      </button>
+    <div class="booking">
+      <h3 class="h3-header">Browse and Book Artists</h3>
     </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/viewing-artists.jpeg"
+            class="card-img-top"
+            alt="two men at a computer searching online"
+          />
+          <div class="card-body">
+            <h5 class="card-title">View Local Artists</h5>
+            <p class="card-text">
+              Etsy actually plaid microdosing occaecat, echo park velit pork
+              belly health goth narwhal tacos consequat. Migas minim pickled,
+              prism copper mug sed VHS PBR&B four dollar toast. Marfa helvetica
+              literally tote bag culpa adaptogen vaporware pork belly palo santo
+              celiac pariatur tumeric aliqua hell of. Culpa tousled listicle
+              everyday carry ut tote bag. Pickled raw denim chartreuse,
+              intelligentsia pok pok 90's 3 wolf moon lumbersexual pug esse hell
+              of put a bird on it. Intelligentsia proident elit VHS authentic
+              aesthetic ex enamel pin kogi truffaut.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/listening-to-music.jpeg"
+            class="card-img-top"
+            alt="two women listening to music"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Listen to their tracks</h5>
+            <p class="card-text">
+              Etsy actually plaid microdosing occaecat, echo park velit pork
+              belly health goth narwhal tacos consequat. Migas minim pickled,
+              prism copper mug sed VHS PBR&B four dollar toast. Marfa helvetica
+              literally tote bag culpa adaptogen vaporware pork belly palo santo
+              celiac pariatur tumeric aliqua hell of. Culpa tousled listicle
+              everyday carry ut tote bag. Pickled raw denim chartreuse,
+              intelligentsia pok pok 90's 3 wolf moon lumbersexual pug esse hell
+              of put a bird on it. Intelligentsia proident elit VHS authentic
+              aesthetic ex enamel pin kogi truffaut.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img
+            src="images/send-request.jpeg"
+            class="card-img-top"
+            alt="woman sitting at laptop"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Request A Booking</h5>
+            <p class="card-text">
+              Etsy actually plaid microdosing occaecat, echo park velit pork
+              belly health goth narwhal tacos consequat. Migas minim pickled,
+              prism copper mug sed VHS PBR&B four dollar toast. Marfa helvetica
+              literally tote bag culpa adaptogen vaporware pork belly palo santo
+              celiac pariatur tumeric aliqua hell of. Culpa tousled listicle
+              everyday carry ut tote bag. Pickled raw denim chartreuse,
+              intelligentsia pok pok 90's 3 wolf moon lumbersexual pug esse hell
+              of put a bird on it. Intelligentsia proident elit VHS authentic
+              aesthetic ex enamel pin kogi truffaut.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span>
+      <button type="submit" data-toggle="modal" data-target="#getStartedModal">
+        Get Started
+      </button>
+    </span>
 
     <!-- Modal -->
     <div
       class="modal fade"
-      id="requestModal"
+      id="getStartedModal"
       tabindex="-1"
       aria-labelledby="requestModalLabel"
       aria-hidden="true"
@@ -261,7 +444,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="requestModalLabel">Request Artist</h5>
+            <h5 class="modal-title" id="requestModalLabel">Create Account</h5>
             <button
               type="button"
               class="close"
@@ -276,103 +459,131 @@
               <form>
                 <div class="form-group row">
                   <label for="firstName" class="col-sm-4 col-form-label"
-                    >First Name</label
+                    >First name</label
                   >
-                  <div class="col-sm-8">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="firstName"
-                      name="firstName"
-                      placeholder="First Name"
-                      required
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="First Name"
+                    required
+                  />
                 </div>
                 <div class="form-group row">
                   <label for="lastName" class="col-sm-4 col-form-label"
-                    >Last Name</label
+                    >Last name</label
                   >
-                  <div class="col-sm-8">
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="lastName"
-                      name="lastName"
-                      placeholder="Last Name"
-                      required
-                    />
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="areaCode" class="col-sm-4 col-form-label"
-                    >Contact Tel.</label
-                  >
-                  <div class="col-sm-3 col-md-3">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      id="areaCode"
-                      name="areaCode"
-                      placeholder="Area Code"
-                      required
-                    />
-                  </div>
-                  <div class="col-sm-5">
-                    <input
-                      type="tel"
-                      class="form-control"
-                      name="telNum"
-                      placeholder="Tel.Number"
-                      required
-                    />
-                  </div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Last Name"
+                    required
+                  />
                 </div>
                 <div class="form-group row">
                   <label for="email" class="col-sm-4 col-form-label"
-                    >Email
-                  </label>
-                  <div class="col-sm-12">
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="form-group row">
+                  <label for="customUsername" class="col-sm-6 form-label"
+                    >Create A Username</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="customUsername"
+                    placeholder="Create a Username"
+                    required
+                  />
+                </div>
+                <div class="form-group row">
+                  <label for="password" class="col-sm-6 col-form-label"
+                    >Create A Password</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="password"
+                    placeholder="Create a Password"
+                    required
+                  />
+                </div>
+                <div class="form-group row">
+                  <label for="city" class="col-sm-4 col-form-label">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Enter City Name"
+                    required
+                  />
+                </div>
+                <div class="form-group row">
+                  <div class="col-sm-4 col-form-label">
+                    <label for="state">State</label>
+                    <select class="form-select" id="state" required>
+                      <option selected>Choose...</option>
+                      <option value="ca">CA</option>
+                      <option value="fl">FL</option>
+                      <option value="ga">GA</option>
+                      <option value="sc">SC</option>
+                      <option value="ny">NY</option>
+                    </select>
+                  </div>
+                  <div class="col-md-4">
+                    <label for="zip" class="form-label">Zip</label>
                     <input
-                      type="email"
+                      type="text"
                       class="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
+                      id="zip"
+                      placeholder="Zip Code"
                       required
                     />
                   </div>
                 </div>
-                <div class="form-group row">
-                  <label for="feedback" class="col-sm-10 col-form-label"
-                    >Addional information</label
-                  >
-                  <div class="col-sm-12">
-                    <textarea
-                      class="form-control"
-                      name="feedback"
-                      id="feedback"
-                      rows="8"
+                <div class="col-12">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="invalidCheck"
                       required
-                      placeholder="Please include your budget, the type of event, special requests, etc."
-                    ></textarea>
+                    />
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <button class="btn btn-primary" type="submit">
+                      Submit form
+                    </button>
+                  </div>
+                  <div class="col">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
                   </div>
                 </div>
               </form>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="submit" class="btn btn-primary">
-                Submit Request
-              </button>
-
-              <!-- Requests are sent directly to artists email/text message-->
             </div>
           </div>
         </div>
@@ -402,10 +613,16 @@
         </div>
       </div>
     </footer>
-
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
